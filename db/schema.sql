@@ -1,0 +1,12 @@
+DROP DATABASE IF EXISTS buger_db;
+CREATE DATABASE buger_db;
+
+USE buger_db;
+
+CREATE TABLE burgers (
+	item_id INTEGER(11) AUTO_INCREMENT NOT NULL, 
+	burger_name VARCHAR(100), 
+	devoured BOOLEAN DEFAULT 0,
+	created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP, 
+	PRIMARY KEY (item_id)
+);
